@@ -1,0 +1,109 @@
+html, body {
+    overflow: hidden;
+    color: #575757 !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+body {
+    -webkit-user-select: none;
+}
+
+#home{
+    /*background: url('../img/background.png') repeat;*/
+   	background: white;
+    background-size: auto;
+}
+
+#notification {
+   	background: white;
+    background-color: #ebf5f6;
+    background-size: auto;
+}
+
+.transparentheader {
+    background-color: #8aced9;
+	color: #575757;
+}
+
+.transparentheader h1 {
+    /*color: white !important;*/
+    text-shadow: none !important;
+}
+
+.transparentheader .hearderline {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    border-bottom: solid 1px white;
+}
+
+#status {
+    width: 400px;
+    height: 350px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
+
+#status.run {
+    background-image: url('../img/state_run2.png');
+}
+
+.field {
+    margin: 15px 0;
+}
+
+#comment {
+    height: 70px;
+}
+
+#alarms_list, .notificationContainer {
+    clear: both;
+    margin: 5px 0;
+}
+
+.alarm {
+    padding-bottom: 5px;
+    color: #575757;
+}
+
+.alarm .li-text-sub {
+    color: #575757;
+}
+
+#alarms_list .alarm {
+    border-bottom: 2px solid white;
+    background-color: #ebf5f6;
+}
+
+.alarm .name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.alarm .startTime {
+    font-size: 25px;
+}
+
+.alarm .comment {
+    font-size: 20px;
+}
+
+.alarm .days {
+    font-size: 20px;
+}
+
+.alarmNotification {
+    text-align: center;
+}
+
+.alarmNotification .comment,
+.alarmNotification .startTime {
+    margin-top: 20pt;
+}
+
+[data-icon="remove"]:after {
+    -webkit-mask-image: url(../lib/tau/mobile/theme/default/images/page/00_icon_delete.png);
+}

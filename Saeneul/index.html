@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Exercise Planner"/>
+    <meta name="viewport" content="width=480, user-scalable=no"/>
+
+    <title>Saeneul planner</title>
+    <link rel="stylesheet" type="text/css"
+          href="./lib/tau/mobile/theme/default/tau.css"/>
+    <link rel="stylesheet" type="text/css" href="css/tau-custom.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+    <div data-role="page" id="home">
+
+        <div data-role="header" data-position="fixed" class="transparentheader">
+            <h1>Saeneul planner</h1>
+
+            <div class="hearderline"></div>
+        </div>
+
+        <div data-role="content">
+            <ul id="alarms_list" data-role="listview" data-inset="true">
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <a href="#new_alarm" id="newAlarmBtn" class="ui-btn">Add New
+                Alarm</a>
+        </div>
+
+        <div id="popup" class="ui-popup">
+            <div id="popupText" class="ui-popup-content popup-content-padding">
+            </div>
+            <div id="popupButtons" class="ui-popup-footer">
+            </div>
+        </div>
+
+    </div>
+
+    <div data-role="page" id="new_alarm">
+
+        <div data-role="header" data-position="fixed">
+            <h1>New Alarm</h1>
+        </div>
+
+        <div data-role="content">
+            <ul class="ui-listview" id="newAlarmDays">
+                <li class="ui-group-index">Name</li>
+                <li class="ui-li-static">
+                    <input type="text" id="name" name="name" maxlength="20"/>
+                </li>
+                <li class="ui-group-index">Type</li>
+                <li class="ui-li-static li-has-checkbox">
+                    <label>
+                        Monday
+                        <input type="checkbox" name="monday"
+                               data-day="MO"
+                               id="monday"/>
+                    </label>
+                </li>
+                <li class="ui-li-static li-has-checkbox">
+                    <label>
+                        Tuesday
+                        <input type="checkbox" name="tuesday"
+                               data-day="TU"
+                               id="tuesday"/>
+                    </label>
+                </li>
+                <li class="ui-li-static li-has-checkbox">
+                    <label>
+                        Wednesday
+                        <input type="checkbox" name="wednesday"
+                               data-day="WE" id="wednesday"/>
+                    </label>
+                </li>
+                <li class="ui-li-static li-has-checkbox">
+                    <label>
+                        Thursday
+                        <input type="checkbox" name="thursday"
+                               data-day="TH"
+                               id="thursday"/>
+                    </label>
+                </li>
+                <li class="ui-li-static li-has-checkbox">
+                    <label>
+                        Friday
+                        <input type="checkbox" name="friday"
+                               data-day="FR"
+                               id="friday"/>
+                    </label>
+                </li>
+                <li class="ui-li-static li-has-checkbox">
+                    <label>
+                        Saturday
+                        <input type="checkbox" name="saturday"
+                               data-day="SA"
+                               id="saturday"/>
+                    </label>
+                </li>
+                <li class="ui-li-static li-has-checkbox">
+                    <label>
+                        Sunday
+                        <input type="checkbox" name="sunday"
+                               data-day="SU"
+                               id="sunday"/>
+                    </label>
+                </li>
+                <li class="ui-group-index">Start time</li>
+                <li class="ui-li-static">
+                    <input type="time" name="startTime" id="startTime"
+                           value=""/>
+                </li>
+                <li class="ui-group-index">Comment</li>
+                <li class="ui-li-static">
+                    <div id="newAlarmsComment">
+                        <textarea name="comment" id="comment"></textarea>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <button id="add-Alarm-cancel-btn" data-inline="true">Cancel
+            </button>
+            <button id="add-alarm-btn" data-inline="true"
+                    class='ui-disabled'>Save
+            </button>
+        </div>
+
+    </div>
+
+    <div data-role="page" id="notification" data-add-back-btn="false">
+
+        <div data-role="header" data-position="fixed" class="transparentheader">
+            <h1>Saeneul planner</h1>
+
+            <div class="hearderline"></div>
+        </div>
+
+        <div data-role="content">
+            <div id="status" class="run"></div>
+            <div class="notificationContainer alarm"></div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <a class="ui-btn" href="#home">Alarm list</a>
+            <a class="ui-btn exit">Exit</a>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="./lib/tau/mobile/js/jquery.min.js"></script>
+<script src="./lib/tau/mobile/js/tau.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>

@@ -1,0 +1,17 @@
+#delete
+res/wgt/templates/exercise.tpl
+res/wgt/templates/exerciseNotification.tpl
+#add
+res/wgt/img/state_run2.png
+res/wgt/templates/alarm.tpl
+res/wgt/templates/alarmNotification.tpl
+#modify
+res/wgt/author-signature.xml
+res/wgt/signature1.xml
+res/wgt/css/style.css
+res/wgt/css/tau-custom.css
+res/wgt/index.html
+res/wgt/js/app.alarm.js
+res/wgt/js/app.js
+res/wgt/js/app.model.js
+res/wgt/js/app.ui.js
